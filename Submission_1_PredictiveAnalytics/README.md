@@ -50,8 +50,18 @@ Dataset yang digunakan untuk memprediksi seseorang yang beresiko mengalami diabe
    - cukup sedikit orang yang berusia di atas 60 tahun.
 
 2. Distribusi Jumlah Orang perKelompok Usia
-3. Perbandingan Jumlah Penderita Diabetes
-4. Perbandingan Jumlah Kehamilan paling banyak dengan Paling Sedikit
+
+      ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/distribusi%20jumlah%20orang%20per%20kelompok.png?raw=true)
+
+   >[!NOTE]
+   >```
+   ># Buat kategori umur
+bins = [20, 30, 40, 50, 60, 70, 80]
+labels = ['20-30', '31-40', '41-50', '51-60', '61-70', '71-85']
+df['AgeGroup'] = pd.cut(df['Age'], bins=bins, labels=labels, right=True)
+   >```
+4. Perbandingan Jumlah Penderita Diabetes
+5. Perbandingan Jumlah Kehamilan paling banyak dengan Paling Sedikit
 **B. EDA - Multivariete Analysis**
 1. Rata-rata Kehamilan Berdasarkan perKelompok Usia
 2. Jumlah Penderita Diabetes berdasarkan perKelompok Usia
