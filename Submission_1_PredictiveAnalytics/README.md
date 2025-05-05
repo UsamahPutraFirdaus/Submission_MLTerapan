@@ -25,4 +25,17 @@ Berdasarkan Problem Statement yang telah disebutkan, berikut adalah tujuan/goals
 - Melakukan Evaluasi model menggunakan Confusion Matrix untuk melihat mana model yang paling sedikit melakukan kesalahan prediksi
 
 ## **Data Understanding**
+Dataset yang digunakan untuk memprediksi seseorang yang beresiko mengalami diabetes. Dataset diambil dari kaggle yang dapat diakses [disini](https://www.kaggle.com/datasets/nanditapore/healthcare-diabetes), dataset ini dipubilkasi oleh [Nandita Pore](https://www.kaggle.com/nanditapore) pada tahun 2023. Dataset ini berisi berbagai atribut yang berkaitan dengan kesehatan, yang dikumpulkan secara cermat untuk mendukung pengembangan model prediktif dalam mengidentifikasi individu yang berisiko menderita diabetes.
+
+### Variable Description
+- Id: Identitas unik untuk setiap entri data.
+- Pregnancies: Jumlah kehamilan yang pernah dialami.
+- Glucose: Konsentrasi glukosa plasma selama 2 jam dalam tes toleransi glukosa oral.
+- BloodPressure: Tekanan darah diastolik (mm Hg).
+- SkinThickness: Ketebalan lipatan kulit trisep (mm).
+- Insulin: Kadar insulin serum selama 2 jam (mu U/ml).
+- BMI: Indeks massa tubuh (berat dalam kg / tinggi dalam m²).
+- DiabetesPedigreeFunction: Skor genetik risiko diabetes berdasarkan silsilah keluarga.
+- Age: Usia dalam tahun.
+- Outcome: Klasifikasi biner yang menunjukkan adanya (1) atau tidak adanya (0) diabetes.
 
