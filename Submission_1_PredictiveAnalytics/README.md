@@ -41,5 +41,12 @@ Dataset yang digunakan untuk memprediksi seseorang yang beresiko mengalami diabe
 
 ### Exploratory Data Analysis (EDA)
 **A. EDA - Univariete Analysis**
-
+1. Distribusi Usia
+   ![alt text](https://drive.google.com/file/d/1BUyRPVErzR-E5rr440nvuAcG9fOHSHzE/view?usp=drive_link?raw=true)
+3. Distribusi Jumlah Orang perKelompok Usia
+4. Perbandingan Jumlah Penderita Diabetes
+5. Perbandingan Jumlah Kehamilan paling banyak dengan Paling Sedikit
 **B. EDA - Multivariete Analysis**
+1. Rata-rata Kehamilan Berdasarkan perKelompok Usia
+2. Jumlah Penderita Diabetes berdasarkan perKelompok Usia
+3. Matriks Korelasi antar Kolom
