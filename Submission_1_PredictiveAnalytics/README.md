@@ -53,7 +53,7 @@ Dataset yang digunakan untuk memprediksi seseorang yang beresiko mengalami diabe
 
       ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/distribusi%20jumlah%20orang%20per%20kelompok.png?raw=true)
 
-   >[!NOTE]
+   > [!NOTE]
    >```Ruby
    ># Buat kategori umur
    >bins = [20, 30, 40, 50, 60, 70, 80]
