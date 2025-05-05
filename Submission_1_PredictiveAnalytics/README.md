@@ -87,5 +87,26 @@ Dataset yang digunakan untuk memprediksi seseorang yang beresiko mengalami diabe
    
 **B. EDA - Multivariete Analysis**
 1. Rata-rata Kehamilan Berdasarkan perKelompok Usia
-2. Jumlah Penderita Diabetes berdasarkan perKelompok Usia
-3. Matriks Korelasi antar Kolom
+
+   ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/rata%20rata%20kehamilan%20per%20kelompok%20usia.png?raw=true)
+
+   **Interpretasi Visualisasi Rata-rata Kehamilan Berdasarkan perKelompok Usia**
+   
+   - Puncak rata-rata kehamilan terjadi pada usia 41–50 tahun, dan menurun setelahnya.
+   - Data ini menunjukkan bahwa sebagian besar perempuan mengalami jumlah kehamilan tertinggi di usia pertengahan hingga awal lanjut usia.
+
+3. Jumlah Penderita Diabetes berdasarkan perKelompok Usia
+
+   ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/jumlah%20penderita%20diabetes%20perkelompok%20usia.png?raw=true)
+
+   **Interpretasi Visualisasi Jumlah Penderita Diabetes berdasarkan perKelompok Usia**
+
+   - Jika dilihat langsung dari visualisasi diatas, usia 20 hingga 30 memiliki penderita diabetes yang sangat banyak. Namun jika melihat dari visualisasi Distribusi Jumlah Orang perKelompok Usia, kelompok usia 20 - 30 memiliki jumlah yang sangat banyak dibandingkan dengan kelompok usia lainnya. Kelompok usia 20-30 hanya sekitar -+ 17% penderita diabetes. Dibandingkan dengan kelompok usia 41-50, tingkat penderita diabetes mencapai hampir 55%
+
+4. Matriks Korelasi antar Kolom
+
+   ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/matriks%20korelasi.png?raw=true)
+   
+   **Interpretasi Visualisasi Jumlah Penderita Diabetes berdasarkan perKelompok Usia**
+   - Glucose adalah fitur paling signifikan dalam menentukan kemungkinan diabetes.
+   - BMI, Age, dan jumlah kehamilan (Pregnancies) juga berkontribusi tetapi tidak sekuat Glucose.
