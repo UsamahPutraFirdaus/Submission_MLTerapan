@@ -39,3 +39,7 @@ Dataset yang digunakan untuk memprediksi seseorang yang beresiko mengalami diabe
 - Age: Usia dalam tahun.
 - Outcome: Klasifikasi biner yang menunjukkan adanya (1) atau tidak adanya (0) diabetes.
 
+### Exploratory Data Analysis (EDA)
+A. EDA - Univariete Analysis
+
+B. 
