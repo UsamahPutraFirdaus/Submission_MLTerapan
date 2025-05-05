@@ -43,9 +43,13 @@ Dataset yang digunakan untuk memprediksi seseorang yang beresiko mengalami diabe
 **A. EDA - Univariete Analysis**
 1. Distribusi Usia
    ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/distribusi%20usia.png?raw=true)
-3. Distribusi Jumlah Orang perKelompok Usia
-4. Perbandingan Jumlah Penderita Diabetes
-5. Perbandingan Jumlah Kehamilan paling banyak dengan Paling Sedikit
+   **Interpretasi Visualisasi Distribusi Usia**
+   - Dataset ini didominasi oleh orang-orang berusia muda, terutama awal 20-an.
+   - cukup sedikit orang yang berusia di atas 60 tahun.
+
+2. Distribusi Jumlah Orang perKelompok Usia
+3. Perbandingan Jumlah Penderita Diabetes
+4. Perbandingan Jumlah Kehamilan paling banyak dengan Paling Sedikit
 **B. EDA - Multivariete Analysis**
 1. Rata-rata Kehamilan Berdasarkan perKelompok Usia
 2. Jumlah Penderita Diabetes berdasarkan perKelompok Usia
