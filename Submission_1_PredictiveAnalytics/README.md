@@ -60,6 +60,11 @@ Dataset yang digunakan untuk memprediksi seseorang yang beresiko mengalami diabe
    >labels = ['20-30', '31-40', '41-50', '51-60', '61-70', '71-85']
    >df['AgeGroup'] = pd.cut(df['Age'], bins=bins, labels=labels, right=True)
    >```
+   Kode diatas digunakan untuk membuat kelompok umur
+   **Interpretasi Visualisasi Distribusi Jumlah Orang perKelompok Usia**
+   - Kelompok usia muda (20–30) adalah mayoritas populasi.
+   - Populasi mengecil seiring bertambahnya usia, terutama di atas 50 tahun.
+   - 
 4. Perbandingan Jumlah Penderita Diabetes
 5. Perbandingan Jumlah Kehamilan paling banyak dengan Paling Sedikit
 **B. EDA - Multivariete Analysis**
