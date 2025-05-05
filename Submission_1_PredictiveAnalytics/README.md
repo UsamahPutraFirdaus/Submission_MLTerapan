@@ -46,10 +46,11 @@ Dataset yang digunakan untuk memprediksi seseorang yang beresiko mengalami diabe
    ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/distribusi%20usia.png?raw=true)
    
    **Interpretasi Visualisasi Distribusi Usia**
+   
    - Dataset ini didominasi oleh orang-orang berusia muda, terutama awal 20-an.
    - cukup sedikit orang yang berusia di atas 60 tahun.
 
-2. Distribusi Jumlah Orang perKelompok Usia
+3. Distribusi Jumlah Orang perKelompok Usia
 
       ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/distribusi%20jumlah%20orang%20per%20kelompok.png?raw=true)
 
@@ -60,7 +61,9 @@ Dataset yang digunakan untuk memprediksi seseorang yang beresiko mengalami diabe
    >df['AgeGroup'] = pd.cut(df['Age'], bins=bins, labels=labels, right=True)
    >```
    Kode diatas digunakan untuk membuat kelompok umur
+   
    **Interpretasi Visualisasi Distribusi Jumlah Orang perKelompok Usia**
+   
    - Kelompok usia muda (20–30) adalah mayoritas populasi.
    - Populasi mengecil seiring bertambahnya usia, terutama di atas 50 tahun.
      
@@ -69,14 +72,16 @@ Dataset yang digunakan untuk memprediksi seseorang yang beresiko mengalami diabe
    ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/perbandingan%20penderita%20diabetes.png?raw=true)
 
    **Interpretasi Visualisasi Perbandingan Jumlah Penderita Diabetes**
+   
    - Mayoritas orang dalam dataset **tidak** menderita diabetes.
    - Namun, sekitar 1 dari 3 orang ternyata menderita diabetes, yang masih cukup signifikan secara proporsi.
    
-5. Perbandingan Jumlah Kehamilan paling banyak dengan Paling Sedikit
+6. Perbandingan Jumlah Kehamilan paling banyak dengan Paling Sedikit
 
    ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/distribusi%20kehamilan%20berdasarkan%20kelompok%20usia.png?raw=true)
 
    **Interpretasi Visualisasi Perbandingan Jumlah Kehamilan Paling Banyak dengan Paling Sedikit**
+   
    - Distribusi jumlah kehamilan condong ke angka kecil: Mayoritas orang memiliki kehamilan 0–4 kali.
    - Jumlah kehamilan lebih dari 10 berpotensi sebagai outlier
    
