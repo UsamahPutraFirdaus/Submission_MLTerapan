@@ -56,9 +56,9 @@ Dataset yang digunakan untuk memprediksi seseorang yang beresiko mengalami diabe
    >[!NOTE]
    >```
    ># Buat kategori umur
-bins = [20, 30, 40, 50, 60, 70, 80]
-labels = ['20-30', '31-40', '41-50', '51-60', '61-70', '71-85']
-df['AgeGroup'] = pd.cut(df['Age'], bins=bins, labels=labels, right=True)
+   >bins = [20, 30, 40, 50, 60, 70, 80]
+   >labels = ['20-30', '31-40', '41-50', '51-60', '61-70', '71-85']
+   >df['AgeGroup'] = pd.cut(df['Age'], bins=bins, labels=labels, right=True)
    >```
 4. Perbandingan Jumlah Penderita Diabetes
 5. Perbandingan Jumlah Kehamilan paling banyak dengan Paling Sedikit
