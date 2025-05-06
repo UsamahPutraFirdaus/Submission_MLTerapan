@@ -123,4 +123,110 @@ y = df["Outcome"]
 x_train , x_test , y_train , y_test = train_test_split(x,y,test_size=0.25,random_state=42,stratify = y)
 ```
 
+## Modeling
+Setelah melakukan data preparation data yang sudah siap akan digunakan untuk membuat model, kali ini akan dibuat 3 model sebagai perbandingan
 
+### A. Model Logistic Regression
+1. Inisialisasi Model Logistic Regression
+```Ruby
+lr_model = LogisticRegression(max_iter=500)
+```
+- Baris ini membuat objek `lr_model` dari kelas `LogisticRegression` yang berasal dari library `sklearn.linear_model`.
+- Parameter `max_iter=500` berarti model diizinkan melakukan maksimal 500 iterasi dalam proses training untuk mencapai konvergensi. Jika data cukup kompleks atau butuh waktu untuk konvergen, nilai ini bisa ditingkatkan dari default-nya (100).
+
+2. Melatih Model dengan Data Training
+```Ruby
+lr_model.fit(x_train, y_train)
+```
+- Fungsi `.fit()` digunakan untuk melatih model menggunakan data training.
+   - `x_train` berisi fitur-fitur (variabel independen) untuk pelatihan.
+   - `y_train` berisi label atau target variabel (dalam hal ini kemungkinan Outcome).
+- Model mempelajari hubungan antara fitur dan target dari data ini agar bisa melakukan prediksi pada data baru.
+  
+3. Evaluasi Akurasi pada Data Training
+```Ruby
+train_acc = lr_model.score(x_train, y_train)
+```
+- Fungsi `.score()` akan menghitung akurasi prediksi model pada data training.
+- Akurasi di sini adalah proporsi prediksi yang benar dibandingkan total data training.
+- Nilai `train_acc` akan disimpan sebagai metrik performa untuk melihat seberapa baik model mengenali pola pada data yang sudah dipelajarinya.
+
+4. Evaluasi Akurasi pada Data Testing
+```Ruby
+test_acc = lr_model.score(x_test, y_test)
+```
+- Serupa dengan sebelumnya, tetapi dilakukan pada data testing (`x_test`, `y_test`).
+- Ini menunjukkan seberapa baik model dapat menggeneralisasi ke data baru yang belum pernah dilihat sebelumnya.
+
+5. Menampilkan Hasil Akurasi
+```Ruby
+print("Akurasi Training:", train_acc)
+print("Akurasi Testing :", test_acc)
+```
+- Menampilkan hasil akurasi pada data training dan testing.
+- Penting untuk membandingkan kedua nilai ini:
+   - Jika training tinggi tapi testing rendah, kemungkinan model overfitting.
+   - Jika kedua nilai serupa dan tinggi, model dianggap baik dan stabil.
+
+### B. Model Decision Tree
+1. Inisialisasi Model Decision Tree
+```Ruby
+dt_model = DecisionTreeClassifier(random_state=42)
+```
+- Membuat objek model `dt_model` dari kelas `DecisionTreeClassifier`, yang merupakan algoritma pohon keputusan dari library `sklearn.tree`.
+- Parameter `random_state=42` digunakan untuk memastikan hasil model konsisten setiap kali dijalankan (mengontrol faktor acak, seperti pemilihan fitur saat pemecahan cabang).
+
+2. Melatih Model
+```Ruby
+dt_model.fit(x_train, y_train)
+```
+- Model dilatih menggunakan data fitur (`x_train`) dan label (`y_train`).
+- Selama proses ini, Decision Tree akan membagi data ke dalam node berdasarkan fitur yang paling baik memisahkan kelas target (menggunakan kriteria seperti Gini Impurity atau Entropy).
+
+3. Melakukan Prediksi
+```Ruby
+y_pred_dt = dt_model.predict(x_test)
+```
+- Menggunakan model yang telah dilatih untuk memprediksi label pada data testing (`x_test`).
+- Hasil prediksi disimpan dalam `y_pred_dt`, yang bisa digunakan untuk evaluasi lanjutan seperti confusion matrix atau metrik klasifikasi lainnya.
+  
+4. Evaluasi Akurasi Model
+```Ruby
+print("Akurasi Training:", dt_model.score(x_train, y_train))
+print("Akurasi Testing :", dt_model.score(x_test, y_test))
+```
+- `dt_model.score()` menghitung akurasi, yaitu proporsi prediksi yang benar.
+   - Akurasi training: seberapa baik model mengenali pola dari data latih.
+   - Akurasi testing: seberapa baik model mampu menggeneralisasi ke data baru.
+- Jika akurasi training sangat tinggi tapi akurasi testing jauh lebih rendah, kemungkinan besar model mengalami overfitting, yang umum terjadi pada decision tree tanpa pengaturan kedalaman (max_depth).
+
+### C. Model Random Forest
+1.  Inisialisasi Model Random Forest
+```Ruby
+rf_model = RandomForestClassifier(random_state=42)
+```
+- Baris ini membuat objek `rf_model` dari kelas `RandomForestClassifier`, yang merupakan bagian dari library `sklearn.ensemble`.
+- Random Forest adalah algoritma ensemble learning yang menggabungkan banyak Decision Tree untuk meningkatkan akurasi dan stabilitas model.
+- `random_state=42` digunakan untuk memastikan hasil yang reproducible (tidak berubah-ubah setiap kali dijalankan).
+
+2. Melatih Model
+```Ruby
+rf_model.fit(x_train, y_train)
+```
+- Model dilatih dengan data fitur (`x_train`) dan target (`y_train`).
+
+3. Prediksi pada Data Testing
+```Ruby
+y_pred_rf = rf_model.predict(x_test)
+```
+- Model digunakan untuk memprediksi label pada data uji (`x_test`).
+- Hasil prediksi disimpan di `y_pred_rf`, yang bisa digunakan untuk evaluasi lanjutan seperti confusion matrix, precision, recall, dll.
+
+4.  Evaluasi Akurasi Model
+```Ruby
+print("Akurasi Training:", rf_model.score(x_train, y_train))
+print("Akurasi Testing :", rf_model.score(x_test, y_test))
+```
+- `.score()` digunakan untuk menghitung akurasi:
+   - Akurasi training: seberapa akurat model terhadap data yang digunakan untuk melatihnya.
+   - Akurasi testing: seberapa baik model memprediksi data baru yang belum pernah dilihat sebelumnya.
