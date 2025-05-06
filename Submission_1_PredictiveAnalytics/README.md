@@ -138,7 +138,7 @@ Interquartile Range (IQR) adalah selisih antara kuartil ketiga (Q3) dan kuartil 
      
 - Setelah Outliers Dihapus
 
-   ![alt text]([https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/outliers%20sebelum%20dihapus.png](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/outliers%20setelah%20dihapus.png)?raw=true)
+   ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/outliers%20setelah%20dihapus.png?raw=true)
 
    Visualiasi diatas nemapilkan hasil outliers setelah dihapus
 
