@@ -306,13 +306,16 @@ Berdasarkan hasil Confusion Matrix dari ketiga model yang diuji, model Decision 
 Berdasarkan serangkaian proses analisis data dan pembangunan model machine learning terhadap dataset diabetes dari Kaggle, diperoleh beberapa poin utama sebagai berikut:
 1. Fitur Penting yang Mempengaruhi Diabetes
 Berdasarkan analisis korelasi dan visualisasi, fitur Glucose, BMI, dan Age memiliki pengaruh paling signifikan terhadap status diabetes seseorang. Fitur Glucose menempati posisi tertinggi dalam korelasi dengan target variabel.
+
 2. Distribusi Usia Penderita Diabetes
 Analisis usia menunjukkan bahwa kelompok usia 41–50 tahun merupakan kelompok dengan jumlah penderita diabetes terbanyak. Hal ini mengindikasikan pentingnya pencegahan dan deteksi dini di kelompok usia tersebut.
+
 3. Perbandingan Model
 Tiga model telah dibangun dan dibandingkan, yaitu:
-- Logistic Regression
-- Decision Tree
-- Random Forest
+   - Logistic Regression
+   - Decision Tree
+   - Random Forest
 Meskipun Random Forest secara umum dikenal memiliki performa yang baik, pada dataset ini model Decision Tree menghasilkan kesalahan prediksi terendah berdasarkan analisis confusion matrix, menjadikannya model dengan performa terbaik di antara ketiganya.
+
 4. Model Terbaik untuk Prediksi Diabetes
 Dengan hasil confusion matrix yang menunjukkan jumlah kesalahan paling sedikit, model Decision Tree dipilih sebagai model terbaik dalam memprediksi status diabetes pada dataset ini.
