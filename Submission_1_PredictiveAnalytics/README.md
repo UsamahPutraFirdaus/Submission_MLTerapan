@@ -11,16 +11,16 @@ Proyek ini bertujuan untuk membangun model predictive analytics yang mampu mende
 ## Business Understanding
 ### Problem Statements
 Dari latar belakang diatas, maka rumusan masalah yang akan dibahas pada proyek ini sebagai berikut:
-- Apakah dengan banyaknya jumlah kehamilan berpengaruh terhadap risiko menderita diabetes?
+- Apakah dengan usia seseorang berpengaruh terhadap risiko menderita diabetes?
 - Model machine learning apa yang memiliki akurasi tertinggi dan tingkat kesalahan prediksi paling rendah dalam mendeteksi penderita diabetes?
 
 ### Goals
 Berdasarkan Problem Statement yang telah disebutkan, berikut adalah tujuan/goals dari proyek ini sebagai berikut:
-- Menganalisis apakah terdapat pengaruh antara jumlah kehamilan seseorang terhadap kemungkinan menderita diabetes.
+- Menganalisis apakah terdapat pengaruh usia seseorang terhadap kemungkinan menderita diabetes.
 - Membandingkan performa beberapa model *machine learning* untuk menemukan model dengan akurasi terbaik dan kesalahan prediksi paling minim.
 
 ### Solution Statements
-- Melakukan Exploratory Data Analysis (EDA) untuk memvisualisasikan jumlah kehamilan berdasarkan kelompok umur, dan penderita diabetes berdasarkan umur
+- Melakukan Exploratory Data Analysis (EDA) untuk memvisualisasikan  kelompok usia, dan penderita diabetes berdasarkan kelompok usia
 - Membandingkan 3 performa model *Machine Learning* yaitu Logistic Regression, Decision Tree, dan Random Forest
 - Melakukan Evaluasi model menggunakan Confusion Matrix untuk melihat mana model yang paling sedikit melakukan kesalahan prediksi
 
@@ -301,3 +301,18 @@ Terdapat 4 label pada matriks confusion seperti yang terlihat di gambar, yaitu T
    ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/confusion%20matrix.png?raw=true)
 
 Berdasarkan hasil Confusion Matrix dari ketiga model yang diuji, model Decision Tree menunjukkan performa terbaik, dengan hanya 2 kesalahan prediksi pada kelas positif (1), dan tidak ada kesalahan pada kelas negatif (0). Sebaliknya, model Logistic Regression memberikan hasil terburuk, dengan 40 kesalahan prediksi pada kelas negatif (0) dan 88 kesalahan pada kelas positif (1). Hal ini menunjukkan bahwa Logistic Regression kurang efektif dalam mendeteksi kasus positif, yang penting dalam konteks deteksi diabetes.
+
+## **Kesimpulan**
+Berdasarkan serangkaian proses analisis data dan pembangunan model machine learning terhadap dataset diabetes dari Kaggle, diperoleh beberapa poin utama sebagai berikut:
+1. Fitur Penting yang Mempengaruhi Diabetes
+Berdasarkan analisis korelasi dan visualisasi, fitur Glucose, BMI, dan Age memiliki pengaruh paling signifikan terhadap status diabetes seseorang. Fitur Glucose menempati posisi tertinggi dalam korelasi dengan target variabel.
+2. Distribusi Usia Penderita Diabetes
+Analisis usia menunjukkan bahwa kelompok usia 41–50 tahun merupakan kelompok dengan jumlah penderita diabetes terbanyak. Hal ini mengindikasikan pentingnya pencegahan dan deteksi dini di kelompok usia tersebut.
+3. Perbandingan Model
+Tiga model telah dibangun dan dibandingkan, yaitu:
+- Logistic Regression
+- Decision Tree
+- Random Forest
+Meskipun Random Forest secara umum dikenal memiliki performa yang baik, pada dataset ini model Decision Tree menghasilkan kesalahan prediksi terendah berdasarkan analisis confusion matrix, menjadikannya model dengan performa terbaik di antara ketiganya.
+4. Model Terbaik untuk Prediksi Diabetes
+Dengan hasil confusion matrix yang menunjukkan jumlah kesalahan paling sedikit, model Decision Tree dipilih sebagai model terbaik dalam memprediksi status diabetes pada dataset ini.
