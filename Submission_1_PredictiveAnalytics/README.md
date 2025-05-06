@@ -111,6 +111,37 @@ Dataset yang digunakan untuk memprediksi seseorang yang beresiko mengalami diabe
    - Glucose adalah fitur paling signifikan dalam menentukan kemungkinan diabetes.
    - BMI, Age, dan jumlah kehamilan (Pregnancies) juga berkontribusi tetapi tidak sekuat Glucose.
 
+**C. Handling Outliers**
+Untuk mengatasi outlier, salah satu metode yang umum digunakan adalah metode IQR (Interquartile Range) dengan visualisasi menggunakan boxplot. Berikut penjelasan mengenai metode IQR dan visualisasi boxplot:
+
+1. Apa itu IQR?
+Interquartile Range (IQR) adalah selisih antara kuartil ketiga (Q3) dan kuartil pertama (Q1) dari suatu data. Q1 adalah nilai yang membagi 25% data pertama (bagian bawah), sedangkan Q3 adalah nilai yang membagi 75% data (bagian atas). IQR digunakan untuk menggambarkan sebaran nilai yang berada di tengah 50% data.
+
+2. Langkah-langkah Deteksi Outlier dengan IQR:
+- Hitung Q1 dan Q3
+   - Q1 adalah nilai pada persentil ke-25 dari data.
+   - Q3 adalah nilai pada persentil ke-75 dari data.
+- Hitung IQR
+   - IQR = Q3 − Q1
+- Tentukan Batas Deteksi Outlier
+   - Batas Bawah (Lower Bound) = Q1 − 1.5 × IQR
+   - Batas Atas (Upper Bound) = Q3 + 1.5 × IQR
+- Identifikasi Outlier
+   - Nilai yang lebih kecil dari batas bawah atau lebih besar dari batas atas dikategorikan sebagai outlier, yaitu data yang menyimpang jauh dari nilai mayoritas.
+
+3. Visualisasi Boxplot
+- Sebelum Outliers Dihapus
+
+   ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/outliers%20sebelum%20dihapus.png?raw=true)
+
+   Pada kolom `Pregnancies`, `Glucose`, `BloodPressure`, `SkinThickness`, `Insulin`, `BMI`, dan `DiabetesPedigreeFunction` terdeteksi cukup banyak outlier. Sementara itu, kolom `Age` juga menunjukkan indikasi adanya outlier. Namun, setelah ditinjau lebih lanjut, nilai-nilai pada kolom Age masih berada dalam rentang yang wajar sehingga tidak dihapus dari data.
+     
+- Setelah Outliers Dihapus
+
+   ![alt text]([https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/outliers%20sebelum%20dihapus.png](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/outliers%20setelah%20dihapus.png)?raw=true)
+
+   Visualiasi diatas nemapilkan hasil outliers setelah dihapus
+
 ## **Data Preparation**
 Pada tahap ini, dilakukan proses transformasi data agar sesuai dan siap digunakan dalam proses pemodelan, salah satunya dengan membagi dataset (split dataset).
 
