@@ -230,3 +230,43 @@ print("Akurasi Testing :", rf_model.score(x_test, y_test))
 - `.score()` digunakan untuk menghitung akurasi:
    - Akurasi training: seberapa akurat model terhadap data yang digunakan untuk melatihnya.
    - Akurasi testing: seberapa baik model memprediksi data baru yang belum pernah dilihat sebelumnya.
+ 
+## Evaluation
+Metrik evaluasi yang digunakan dalam proyek ini ialah sebagai berikut:
+
+### Classification Report
+
+   ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/tp_tn_fp_fn.png?raw=true)
+
+Terdapat 4 label pada matriks confusion seperti yang terlihat di gambar, yaitu TP, TN, FP, dan FN. a. True Positive (TP) merupakan jumlah data pada positif yang ditebak dengan benar. b. True Negative (TN) merupakan jumlah data pada negatif yang ditebak dengan benar. c. False Positive (FP) merupakan jumlah data yang ditebak dengan salah karena diprediksi positif, sedangkan aslinya adalah negatif. d. False Negative (FN) merupakan jumlah data yang ditebak dengan salah karena diprediksi negatif, sedangkan aslinya adalah positif.
+
+1. Precision
+
+   ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/precision.png?raw=true)
+
+   Dari seluruh prediksi positif, berapa yang benar-benar positif.
+
+2. Recall
+   
+   ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/recal.png?raw=true)
+
+   Dari semua kasus positif aktual, berapa banyak yang berhasil diprediksi dengan benar.
+
+3. F1-Score
+
+   ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/f1.png?raw=true)
+
+   Harmoni antara precision dan recall. Semakin tinggi, semakin baik keseimbangan keduanya.
+
+4. Average (Macro vs Weighted)
+
+   ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/avg.png?raw=true)
+
+   - Macro Average : Menghitung metrik (precision, recall, f1) secara rata-rata antar kelas, tanpa memperhatikan jumlah sampel (support) pada tiap kelas.
+   - Weighted Average : Sama seperti macro, tetapi diberi bobot sesuai jumlah sampel (support) di tiap kelas.
+
+### Confusion Matrix
+
+   ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/confusion%20matrix.png?raw=true)
+
+Berdasarkan hasil Confusion Matrix dari ketiga model yang diuji, model Decision Tree menunjukkan performa terbaik, dengan hanya 2 kesalahan prediksi pada kelas positif (1), dan tidak ada kesalahan pada kelas negatif (0). Sebaliknya, model Logistic Regression memberikan hasil terburuk, dengan 40 kesalahan prediksi pada kelas negatif (0) dan 88 kesalahan pada kelas positif (1). Hal ini menunjukkan bahwa Logistic Regression kurang efektif dalam mendeteksi kasus positif, yang penting dalam konteks deteksi diabetes.
