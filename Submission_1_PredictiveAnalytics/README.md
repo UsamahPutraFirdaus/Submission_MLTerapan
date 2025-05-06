@@ -112,17 +112,15 @@ Dataset yang digunakan untuk memprediksi seseorang yang beresiko mengalami diabe
    - BMI, Age, dan jumlah kehamilan (Pregnancies) juga berkontribusi tetapi tidak sekuat Glucose.
 
 ## **Data Preparation**
-Pada tahap ini terdapat 2 tahapan yang dilakukan diantaranya sebagai berikut:
-1. Menghapus kolom yang tidak digunakan dalam tahap modeling
-2. Melakukan split dataset
-
-### Menghapus Kolom yang tidak digunakan
-
-   ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/info.png?raw=true)
-   
-Pada tahap ini, terdapat kolom yang tidak digunakan yaitu `Id`. Kolom ini tidak digunakan dalam tahap modeling sehingga perli dihapus. 
+Pada tahap ini, dilakukan proses transformasi data agar sesuai dan siap digunakan dalam proses pemodelan, salah satunya dengan membagi dataset (split dataset).
 
 ### Melakukan Split Dataset
+Karena fokus prediksi terletak pada variabel Outcome sebagai target untuk menentukan tingkat akurasi dalam mengklasifikasikan apakah seseorang mengalami menderita diabetes atau tidak, maka kolom tersebut dipisahkan dari dataset utama dan disimpan dalam variabel terpisah. Dataset kemudian dibagi menjadi dua bagian: data training yang digunakan untuk melatih model, dan data testing yang digunakan untuk menguji performa model terhadap data yang belum pernah dilihat sebelumnya. Pembagian ini dilakukan dengan rasio 75% untuk training dan 25% untuk testing, menggunakan fungsi train_test_split dari pustaka sklearn.
 
+```Ruby
+x = df.drop(["Outcome"],axis=1)
+y = df["Outcome"]
+x_train , x_test , y_train , y_test = train_test_split(x,y,test_size=0.25,random_state=42,stratify = y)
+```
 
 
