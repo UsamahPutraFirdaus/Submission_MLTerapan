@@ -110,3 +110,19 @@ Dataset yang digunakan untuk memprediksi seseorang yang beresiko mengalami diabe
    **Interpretasi Visualisasi Jumlah Penderita Diabetes berdasarkan perKelompok Usia**
    - Glucose adalah fitur paling signifikan dalam menentukan kemungkinan diabetes.
    - BMI, Age, dan jumlah kehamilan (Pregnancies) juga berkontribusi tetapi tidak sekuat Glucose.
+
+## **Data Preparation**
+Pada tahap ini terdapat 2 tahapan yang dilakukan diantaranya sebagai berikut:
+1. Menghapus kolom yang tidak digunakan dalam tahap modeling
+2. Melakukan split dataset
+
+### Menghapus Kolom yang tidak digunakan
+
+   ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/info.png?raw=true)
+   
+Pada tahap ini, terdapat kolom yang tidak digunakan yaitu `Id`. Kolom ini tidak digunakan dalam tahap modeling sehingga perli dihapus. 
+
+### Melakukan Split Dataset
+
+
+
