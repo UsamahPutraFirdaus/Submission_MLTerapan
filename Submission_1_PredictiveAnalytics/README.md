@@ -27,7 +27,7 @@ Berdasarkan Problem Statement yang telah disebutkan, berikut adalah tujuan/goals
 ## **Data Understanding**
 Dataset yang digunakan untuk memprediksi seseorang yang beresiko mengalami diabetes. Dataset diambil dari kaggle yang dapat diakses [disini](https://www.kaggle.com/datasets/nanditapore/healthcare-diabetes), dataset ini dipubilkasi oleh [Nandita Pore](https://www.kaggle.com/nanditapore) pada tahun 2023. Dataset ini berisi berbagai atribut yang berkaitan dengan kesehatan, yang dikumpulkan secara cermat untuk mendukung pengembangan model prediktif dalam mengidentifikasi individu yang berisiko menderita diabetes.
 
-  ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/variable.png?raw=true)
+  ![img alt](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/variable.png?raw=true)
 
 Data Healthcare Diabetes yang digunakan terdapat 10 kolom dan 2768 baris data.
 
@@ -51,7 +51,7 @@ Pada tahap ini, dilakukan pemeriksaan terhadap data yang tidak valid dalam datas
 **B. EDA - Univariete Analysis**
 1. Distribusi Usia
 
-   ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/distribusi%20usia.png?raw=true)
+   ![img alt](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/distribusi%20usia.png?raw=true)
    
    **Interpretasi Visualisasi Distribusi Usia**
    
@@ -60,7 +60,7 @@ Pada tahap ini, dilakukan pemeriksaan terhadap data yang tidak valid dalam datas
 
 3. Distribusi Jumlah Orang perKelompok Usia
 
-      ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/distribusi%20jumlah%20orang%20per%20kelompok.png?raw=true)
+      ![img alt](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/distribusi%20jumlah%20orang%20per%20kelompok.png?raw=true)
 
    >```Ruby
    ># Buat kategori umur
@@ -77,7 +77,7 @@ Pada tahap ini, dilakukan pemeriksaan terhadap data yang tidak valid dalam datas
      
 4. Perbandingan Jumlah Penderita Diabetes
 
-   ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/perbandingan%20penderita%20diabetes.png?raw=true)
+   ![img alt](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/perbandingan%20penderita%20diabetes.png?raw=true)
 
    **Interpretasi Visualisasi Perbandingan Jumlah Penderita Diabetes**
    
@@ -86,7 +86,7 @@ Pada tahap ini, dilakukan pemeriksaan terhadap data yang tidak valid dalam datas
    
 5. Perbandingan Jumlah Kehamilan paling banyak dengan Paling Sedikit
 
-   ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/distribusi%20kehamilan%20berdasarkan%20kelompok%20usia.png?raw=true)
+   ![img alt](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/distribusi%20kehamilan%20berdasarkan%20kelompok%20usia.png?raw=true)
 
    **Interpretasi Visualisasi Perbandingan Jumlah Kehamilan Paling Banyak dengan Paling Sedikit**
    
@@ -96,7 +96,7 @@ Pada tahap ini, dilakukan pemeriksaan terhadap data yang tidak valid dalam datas
 **B. EDA - Multivariete Analysis**
 1. Rata-rata Kehamilan Berdasarkan perKelompok Usia
 
-   ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/rata%20rata%20kehamilan%20per%20kelompok%20usia.png?raw=true)
+   ![img alt](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/rata%20rata%20kehamilan%20per%20kelompok%20usia.png?raw=true)
 
    **Interpretasi Visualisasi Rata-rata Kehamilan Berdasarkan perKelompok Usia**
    
@@ -105,7 +105,7 @@ Pada tahap ini, dilakukan pemeriksaan terhadap data yang tidak valid dalam datas
 
 2. Jumlah Penderita Diabetes berdasarkan perKelompok Usia
 
-   ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/jumlah%20penderita%20diabetes%20perkelompok%20usia.png?raw=true)
+   ![img alt](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/jumlah%20penderita%20diabetes%20perkelompok%20usia.png?raw=true)
 
    **Interpretasi Visualisasi Jumlah Penderita Diabetes berdasarkan perKelompok Usia**
 
@@ -113,7 +113,7 @@ Pada tahap ini, dilakukan pemeriksaan terhadap data yang tidak valid dalam datas
 
 3. Matriks Korelasi antar Kolom
 
-   ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/matriks%20korelasi.png?raw=true)
+   ![img alt](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/matriks%20korelasi.png?raw=true)
    
    **Interpretasi Visualisasi Jumlah Penderita Diabetes berdasarkan perKelompok Usia**
    - Glucose adalah fitur paling signifikan dalam menentukan kemungkinan diabetes.
@@ -140,7 +140,7 @@ Langkah-langkah Deteksi Outlier dengan IQR:
 - Identifikasi Outlier
    - Nilai yang lebih kecil dari batas bawah atau lebih besar dari batas atas dikategorikan sebagai outlier, yaitu data yang menyimpang jauh dari nilai mayoritas.
  
-   ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/outliers%20sebelum%20dihapus.png?raw=true)
+   ![img alt](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/indentify%20outliers.png?raw=true)
 
    Pada kolom `Pregnancies`, `Glucose`, `BloodPressure`, `SkinThickness`, `Insulin`, `BMI`, dan `DiabetesPedigreeFunction` terdeteksi cukup banyak outlier. Sementara itu, kolom `Age` juga menunjukkan indikasi adanya outlier. Namun, setelah ditinjau lebih lanjut, nilai-nilai pada kolom Age masih berada dalam rentang yang wajar sehingga tidak dihapus dari data.
 
@@ -176,7 +176,7 @@ Karena saat dilakukan pengecekan outlier ditemukan cukup banyak outlier, maka ou
 6. Menghapus Baris Outlier
 - Semua baris data yang mengandung outlier kemudian dihapus dari dataset. Ini dilakukan agar data menjadi lebih bersih dan hasil analisis atau pemodelan tidak terganggu oleh nilai-nilai ekstrem.
 
-   ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/outliers%20setelah%20dihapus.png?raw=true)
+   ![img alt](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/outliers%20setelah%20dihapus.png?raw=true)
 
    Visualiasi diatas menampilkan hasil setelah outliers dihapus
 
@@ -190,154 +190,86 @@ x_train , x_test , y_train , y_test = train_test_split(x,y,test_size=0.25,random
 ```
 
 ## Modeling
-Setelah melakukan data preparation data yang sudah siap akan digunakan untuk membuat model, kali ini akan dibuat 3 model sebagai perbandingan
+Pada tahap modeling, dilakukan pemilihan algoritma yang akan digunakan dalam membangun model machine learning, serta proses pengembangan dan pelatihan model tersebut agar dapat dimanfaatkan dalam analisis prediksi. Tiga algoritma berikut akan diuji terlebih dahulu untuk mengevaluasi performa dan menentukan model dengan hasil terbaik, yaitu:
 
-### A. Model Logistic Regression
-1. Inisialisasi Model Logistic Regression
-```Ruby
-lr_model = LogisticRegression(max_iter=500)
-```
-- Baris ini membuat objek `lr_model` dari kelas `LogisticRegression` yang berasal dari library `sklearn.linear_model`.
-- Parameter `max_iter=500` berarti model diizinkan melakukan maksimal 500 iterasi dalam proses training untuk mencapai konvergensi. Jika data cukup kompleks atau butuh waktu untuk konvergen, nilai ini bisa ditingkatkan dari default-nya (100).
+1. Algoritma Logistic Regression
 
-2. Melatih Model dengan Data Training
-```Ruby
-lr_model.fit(x_train, y_train)
-```
-- Fungsi `.fit()` digunakan untuk melatih model menggunakan data training.
-   - `x_train` berisi fitur-fitur (variabel independen) untuk pelatihan.
-   - `y_train` berisi label atau target variabel (dalam hal ini kemungkinan Outcome).
-- Model mempelajari hubungan antara fitur dan target dari data ini agar bisa melakukan prediksi pada data baru.
-  
-3. Evaluasi Akurasi pada Data Training
-```Ruby
-train_acc = lr_model.score(x_train, y_train)
-```
-- Fungsi `.score()` akan menghitung akurasi prediksi model pada data training.
-- Akurasi di sini adalah proporsi prediksi yang benar dibandingkan total data training.
-- Nilai `train_acc` akan disimpan sebagai metrik performa untuk melihat seberapa baik model mengenali pola pada data yang sudah dipelajarinya.
+  Regresi logistik adalah teknik analisis data yang menggunakan matematika untuk menemukan hubungan antara dua faktor data. Kemudian menggunakan hubungan ini untuk memprediksi nilai dari salah satu faktor tersebut berdasarkan faktor yang lain. Prediksi biasanya memiliki jumlah hasil yang terbatas, seperti ya atau tidak [[1]](https://aws.amazon.com/id/what-is/logistic-regression/).
 
-4. Evaluasi Akurasi pada Data Testing
+Model ini bekerja dengan memodelkan hubungan antara satu atau lebih variabel independen dan variabel dependen biner (dua kelas) menggunakan fungsi logistik (sigmoid). Pada algoritma ini digunakan parameter solver='lbfgs' untuk optimasi, max_iter=500 sebagai batas maksimum iterasi, dan random_state=42 untuk memastikan hasil model tetap konsisten.
 ```Ruby
-test_acc = lr_model.score(x_test, y_test)
+lr_model = LogisticRegression(solver='lbfgs', max_iter=500, random_state=42)
 ```
-- Serupa dengan sebelumnya, tetapi dilakukan pada data testing (`x_test`, `y_test`).
-- Ini menunjukkan seberapa baik model dapat menggeneralisasi ke data baru yang belum pernah dilihat sebelumnya.
 
-5. Menampilkan Hasil Akurasi
-```Ruby
-print("Akurasi Training:", train_acc)
-print("Akurasi Testing :", test_acc)
-```
-- Menampilkan hasil akurasi pada data training dan testing.
-- Penting untuk membandingkan kedua nilai ini:
-   - Jika training tinggi tapi testing rendah, kemungkinan model overfitting.
-   - Jika kedua nilai serupa dan tinggi, model dianggap baik dan stabil.
+2. Algoritma Decision Tree
+Decision trees adalah algoritme pembelajaran yang diawasi dan bersifat non-parametrik, yang digunakan untuk tugas klasifikasi dan regresi. Memiliki struktur pohon hierarkis, yang terdiri dari simpul akar, cabang, simpul internal dan simpul daun [2](https://www.ibm.com/id-id/think/topics/decision-trees).
 
-### B. Model Decision Tree
-1. Inisialisasi Model Decision Tree
+Decision Tree membagi data berdasarkan fitur yang paling baik memisahkan kelas target menggunakan metrik seperti Gini Impurity. Pada implementasinya, model ini menggunakan parameter max_depth=5 untuk menghindari overfitting, criterion='gini' sebagai metode pemilihan split, dan random_state=42 untuk menjaga konsistensi hasil.
 ```Ruby
-dt_model = DecisionTreeClassifier(random_state=42)
+dt_model = DecisionTreeClassifier(max_depth=5, criterion='gini', random_state=42)
 ```
-- Membuat objek model `dt_model` dari kelas `DecisionTreeClassifier`, yang merupakan algoritma pohon keputusan dari library `sklearn.tree`.
-- Parameter `random_state=42` digunakan untuk memastikan hasil model konsisten setiap kali dijalankan (mengontrol faktor acak, seperti pemilihan fitur saat pemecahan cabang).
 
-2. Melatih Model
-```Ruby
-dt_model.fit(x_train, y_train)
-```
-- Model dilatih menggunakan data fitur (`x_train`) dan label (`y_train`).
-- Selama proses ini, Decision Tree akan membagi data ke dalam node berdasarkan fitur yang paling baik memisahkan kelas target (menggunakan kriteria seperti Gini Impurity atau Entropy).
+3. Algoritma Random Forest
+Random Forest adalah algoritma dalam machine learning yang digunakan untuk pengklasifikasian dataset. Karena fungsinya bisa digunakan untuk banyak dimensi dengan berbagai skala dan performa yang tinggi. Klasifikasi ini dilakukan melalui penggabungan tree dalam decision tree dengan cara training dataset.
 
-3. Melakukan Prediksi
+Random Forest merupakan algoritma ensemble learning yang menggabungkan banyak Decision Tree untuk meningkatkan akurasi dan stabilitas prediksi. Model ini membangun beberapa pohon keputusan dan menggabungkan hasil prediksinya. Parameter yang digunakan adalah n_estimators=50 (jumlah pohon), max_depth=12 (kedalaman maksimum pohon), random_state=42 untuk replikasi hasil, dan n_jobs=-1 yang berarti proses training dilakukan secara paralel menggunakan seluruh core CPU.
 ```Ruby
-y_pred_dt = dt_model.predict(x_test)
+rf_model = RandomForestClassifier(n_estimators=50, max_depth=12, random_state=42, n_jobs=-1)
 ```
-- Menggunakan model yang telah dilatih untuk memprediksi label pada data testing (`x_test`).
-- Hasil prediksi disimpan dalam `y_pred_dt`, yang bisa digunakan untuk evaluasi lanjutan seperti confusion matrix atau metrik klasifikasi lainnya.
-  
-4. Evaluasi Akurasi Model
-```Ruby
-print("Akurasi Training:", dt_model.score(x_train, y_train))
-print("Akurasi Testing :", dt_model.score(x_test, y_test))
-```
-- `dt_model.score()` menghitung akurasi, yaitu proporsi prediksi yang benar.
-   - Akurasi training: seberapa baik model mengenali pola dari data latih.
-   - Akurasi testing: seberapa baik model mampu menggeneralisasi ke data baru.
-- Jika akurasi training sangat tinggi tapi akurasi testing jauh lebih rendah, kemungkinan besar model mengalami overfitting, yang umum terjadi pada decision tree tanpa pengaturan kedalaman (max_depth).
 
-### C. Model Random Forest
-1.  Inisialisasi Model Random Forest
-```Ruby
-rf_model = RandomForestClassifier(random_state=42)
-```
-- Baris ini membuat objek `rf_model` dari kelas `RandomForestClassifier`, yang merupakan bagian dari library `sklearn.ensemble`.
-- Random Forest adalah algoritma ensemble learning yang menggabungkan banyak Decision Tree untuk meningkatkan akurasi dan stabilitas model.
-- `random_state=42` digunakan untuk memastikan hasil yang reproducible (tidak berubah-ubah setiap kali dijalankan).
-
-2. Melatih Model
-```Ruby
-rf_model.fit(x_train, y_train)
-```
-- Model dilatih dengan data fitur (`x_train`) dan target (`y_train`).
-
-3. Prediksi pada Data Testing
-```Ruby
-y_pred_rf = rf_model.predict(x_test)
-```
-- Model digunakan untuk memprediksi label pada data uji (`x_test`).
-- Hasil prediksi disimpan di `y_pred_rf`, yang bisa digunakan untuk evaluasi lanjutan seperti confusion matrix, precision, recall, dll.
-
-4.  Evaluasi Akurasi Model
-```Ruby
-print("Akurasi Training:", rf_model.score(x_train, y_train))
-print("Akurasi Testing :", rf_model.score(x_test, y_test))
-```
-- `.score()` digunakan untuk menghitung akurasi:
-   - Akurasi training: seberapa akurat model terhadap data yang digunakan untuk melatihnya.
-   - Akurasi testing: seberapa baik model memprediksi data baru yang belum pernah dilihat sebelumnya.
- 
 ## Evaluation
 Metrik evaluasi yang digunakan dalam proyek ini ialah sebagai berikut:
 
-### Classification Report
+### A. Classification Report
 
-   ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/tp_tn_fp_fn.png?raw=true)
+   ![img alt](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/tp_tn_fp_fn.png?raw=true)
 
 Terdapat 4 label pada matriks confusion seperti yang terlihat di gambar, yaitu TP, TN, FP, dan FN. a. True Positive (TP) merupakan jumlah data pada positif yang ditebak dengan benar. b. True Negative (TN) merupakan jumlah data pada negatif yang ditebak dengan benar. c. False Positive (FP) merupakan jumlah data yang ditebak dengan salah karena diprediksi positif, sedangkan aslinya adalah negatif. d. False Negative (FN) merupakan jumlah data yang ditebak dengan salah karena diprediksi negatif, sedangkan aslinya adalah positif.
 
 1. Precision
 
-   ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/precision.png?raw=true)
+   ![img alt](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/precision.png?raw=true)
 
    Dari seluruh prediksi positif, berapa yang benar-benar positif.
 
 2. Recall
    
-   ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/recal.png?raw=true)
+   ![img alt](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/recal.png?raw=true)
 
    Dari semua kasus positif aktual, berapa banyak yang berhasil diprediksi dengan benar.
 
 3. F1-Score
 
-   ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/f1.png?raw=true)
+   ![img alt](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/f1.png?raw=true)
 
    Harmoni antara precision dan recall. Semakin tinggi, semakin baik keseimbangan keduanya.
 
 4. Average (Macro vs Weighted)
 
-   ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/avg.png?raw=true)
+   ![img alt](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/avg.png?raw=true)
 
    - Macro Average : Menghitung metrik (precision, recall, f1) secara rata-rata antar kelas, tanpa memperhatikan jumlah sampel (support) pada tiap kelas.
    - Weighted Average : Sama seperti macro, tetapi diberi bobot sesuai jumlah sampel (support) di tiap kelas.
 
-### Confusion Matrix
+5. Hasil Classficiation Report
 
-   ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/confusion%20matrix.png?raw=true)
+   ![img alt](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/akurasi.png?raw=true)
 
-Berdasarkan hasil Confusion Matrix dari ketiga model yang diuji, model Decision Tree menunjukkan performa terbaik, dengan hanya 2 kesalahan prediksi pada kelas positif (1), dan tidak ada kesalahan pada kelas negatif (0). Sebaliknya, model Logistic Regression memberikan hasil terburuk, dengan 40 kesalahan prediksi pada kelas negatif (0) dan 88 kesalahan pada kelas positif (1). Hal ini menunjukkan bahwa Logistic Regression kurang efektif dalam mendeteksi kasus positif, yang penting dalam konteks deteksi diabetes.
+  - Logistic Regression: Akurasi 78.2%, performa terendah dari ketiga model, dengan recall kelas 1 hanya 51.9% yang menunjukkan banyak false negative.
+  - Decision Tree: Akurasi 84.5%, lebih baik dari Logistic Regression dengan F1-Score kelas 1 sebesar 71.7%, menandakan model ini cukup seimbang.
+  - Random Forest: Akurasi tertinggi 99.1%, dengan precision dan recall kelas 1 nyaris sempurna (1.000 dan 0.973), menunjukkan performa sangat baik dan overfitting bisa menjadi perhatian.
+
+Kesimpulan: Random Forest memberikan performa terbaik secara keseluruhan, namun perlu dipastikan bahwa model tidak overfit terhadap data pelatihan. Inilah model yang paling andal berdasarkan metrik yang ditampilkan.
+   
+### B. Confusion Matrix
+
+   ![img alt](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/Confusion_Matrix.png?raw=true)
+
+Berdasarkan hasil Confusion Matrix dari ketiga model yang diuji, model Random Forest menunjukkan performa terbaik, dengan hanya 5 kesalahan prediksi pada kelas positif (1), dan tidak ada kesalahan pada kelas negatif (0). Sebaliknya, model Logistic Regression memberikan hasil terburuk, dengan 40 kesalahan prediksi pada kelas negatif (0) dan 88 kesalahan pada kelas positif (1). Hal ini menunjukkan bahwa Logistic Regression kurang efektif dalam mendeteksi penderita diabetes
 
 ### Perbandingan Hasil Evaluasi Model
+
+Dari hasil kedua skema evaluasi model (Classification Report dan Confusion Matrix) hasil menunjukkan bahwa Random Forest memberikan hasil performa terbaik. Dimana akurasi mencapai 91% dan kelasahan prediksi hanya 5 kesalahan pada kelas positif dan tidak ada kesalahan prediksi pada kelas negatif.
 
 ## **Kesimpulan**
 Berdasarkan serangkaian proses analisis data dan pembangunan model machine learning terhadap dataset diabetes dari Kaggle, diperoleh beberapa poin utama sebagai berikut:
@@ -352,7 +284,7 @@ Tiga model telah dibangun dan dibandingkan, yaitu:
    - Logistic Regression
    - Decision Tree
    - Random Forest
-Meskipun Random Forest secara umum dikenal memiliki performa yang baik, pada dataset ini model Decision Tree menghasilkan kesalahan prediksi terendah berdasarkan analisis confusion matrix, menjadikannya model dengan performa terbaik di antara ketiganya.
+Pada dataset ini model Random Forest menghasilkan kesalahan prediksi terendah berdasarkan analisis confusion matrix, menjadikannya model dengan performa terbaik di antara ketiganya.
 
 4. Model Terbaik untuk Prediksi Diabetes
-Dengan hasil confusion matrix yang menunjukkan jumlah kesalahan paling sedikit, model Decision Tree dipilih sebagai model terbaik dalam memprediksi status diabetes pada dataset ini.
+Dengan hasil confusion matrix model Random Forest menunjukkan jumlah kesalahan paling sedikit, serta mendapatkan akurasi paling tinggi dibandingkan dengan model lainnya. Hal ini menunjukkan bahwa Model Random Forest merupakan model yang paling baik performanya dalam mendeteksi Penderita Diabetes 
