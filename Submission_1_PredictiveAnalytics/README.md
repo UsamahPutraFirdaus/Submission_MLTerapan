@@ -144,7 +144,6 @@ Langkah-langkah Deteksi Outlier dengan IQR:
 
    Pada kolom `Pregnancies`, `Glucose`, `BloodPressure`, `SkinThickness`, `Insulin`, `BMI`, dan `DiabetesPedigreeFunction` terdeteksi cukup banyak outlier. Sementara itu, kolom `Age` juga menunjukkan indikasi adanya outlier. Namun, setelah ditinjau lebih lanjut, nilai-nilai pada kolom Age masih berada dalam rentang yang wajar sehingga tidak dihapus dari data.
 
-
 ## **Data Preparation**
 Pada tahap ini, dilakukan proses transformasi data agar sesuai dan siap digunakan dalam proses pemodelan, berikut adalah beberapa persiapan yang perlu dilakukan sebagai berikut:
 
