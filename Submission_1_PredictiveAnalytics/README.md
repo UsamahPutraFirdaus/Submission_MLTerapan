@@ -11,12 +11,12 @@ Proyek ini bertujuan untuk membangun model predictive analytics yang mampu mende
 ## Business Understanding
 ### Problem Statements
 Dari latar belakang diatas, maka rumusan masalah yang akan dibahas pada proyek ini sebagai berikut:
-- Apakah dengan usia seseorang berpengaruh terhadap risiko menderita diabetes?
+- fitur apa saja yang berpengaruh dalam proses modeling predictive analytics terhadap penderita diabetes?
 - Model machine learning apa yang memiliki akurasi tertinggi dan tingkat kesalahan prediksi paling rendah dalam mendeteksi penderita diabetes?
 
 ### Goals
 Berdasarkan Problem Statement yang telah disebutkan, berikut adalah tujuan/goals dari proyek ini sebagai berikut:
-- Menganalisis apakah terdapat pengaruh usia seseorang terhadap kemungkinan menderita diabetes.
+- Menganalisis pentingnya setiap fitur terhadap penderita diabetes.
 - Membandingkan performa beberapa model *machine learning* untuk menemukan model dengan akurasi terbaik dan kesalahan prediksi paling minim.
 
 ### Solution Statements
@@ -26,6 +26,10 @@ Berdasarkan Problem Statement yang telah disebutkan, berikut adalah tujuan/goals
 
 ## **Data Understanding**
 Dataset yang digunakan untuk memprediksi seseorang yang beresiko mengalami diabetes. Dataset diambil dari kaggle yang dapat diakses [disini](https://www.kaggle.com/datasets/nanditapore/healthcare-diabetes), dataset ini dipubilkasi oleh [Nandita Pore](https://www.kaggle.com/nanditapore) pada tahun 2023. Dataset ini berisi berbagai atribut yang berkaitan dengan kesehatan, yang dikumpulkan secara cermat untuk mendukung pengembangan model prediktif dalam mengidentifikasi individu yang berisiko menderita diabetes.
+
+  ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/variable.png?raw=true)
+
+Data Healthcare Diabetes yang digunakan terdapat 10 kolom dan 2768 baris data.
 
 ### Variable Description
 - Id: Identitas unik untuk setiap entri data.
@@ -39,8 +43,12 @@ Dataset yang digunakan untuk memprediksi seseorang yang beresiko mengalami diabe
 - Age: Usia dalam tahun.
 - Outcome: Klasifikasi biner yang menunjukkan adanya (1) atau tidak adanya (0) diabetes.
 
+
 ### Exploratory Data Analysis (EDA)
-**A. EDA - Univariete Analysis**
+**A. Menangani Missing Valye & Duplicate Data**
+Pada tahap ini, dilakukan pemeriksaan terhadap data yang tidak valid dalam dataset. Hasil pemeriksaan menunjukkan bahwa tidak terdapat nilai null pada kolom mana pun, dan tidak ditemukan data yang duplikat. Oleh karena itu, data dinyatakan siap untuk dianalisis pada tahap berikutnya.
+
+**B. EDA - Univariete Analysis**
 1. Distribusi Usia
 
    ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/distribusi%20usia.png?raw=true)
@@ -76,7 +84,7 @@ Dataset yang digunakan untuk memprediksi seseorang yang beresiko mengalami diabe
    - Mayoritas orang dalam dataset **tidak** menderita diabetes.
    - Namun, sekitar 1 dari 3 orang ternyata menderita diabetes, yang masih cukup signifikan secara proporsi.
    
-6. Perbandingan Jumlah Kehamilan paling banyak dengan Paling Sedikit
+5. Perbandingan Jumlah Kehamilan paling banyak dengan Paling Sedikit
 
    ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/distribusi%20kehamilan%20berdasarkan%20kelompok%20usia.png?raw=true)
 
@@ -95,7 +103,7 @@ Dataset yang digunakan untuk memprediksi seseorang yang beresiko mengalami diabe
    - Puncak rata-rata kehamilan terjadi pada usia 41–50 tahun, dan menurun setelahnya.
    - Data ini menunjukkan bahwa sebagian besar perempuan mengalami jumlah kehamilan tertinggi di usia pertengahan hingga awal lanjut usia.
 
-3. Jumlah Penderita Diabetes berdasarkan perKelompok Usia
+2. Jumlah Penderita Diabetes berdasarkan perKelompok Usia
 
    ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/jumlah%20penderita%20diabetes%20perkelompok%20usia.png?raw=true)
 
@@ -103,7 +111,7 @@ Dataset yang digunakan untuk memprediksi seseorang yang beresiko mengalami diabe
 
    - Jika dilihat langsung dari visualisasi diatas, usia 20 hingga 30 memiliki penderita diabetes yang sangat banyak. Namun jika melihat dari visualisasi Distribusi Jumlah Orang perKelompok Usia, kelompok usia 20 - 30 memiliki jumlah yang sangat banyak dibandingkan dengan kelompok usia lainnya. Kelompok usia 20-30 hanya sekitar -+ 17% penderita diabetes. Dibandingkan dengan kelompok usia 41-50, tingkat penderita diabetes mencapai hampir 55%
 
-4. Matriks Korelasi antar Kolom
+3. Matriks Korelasi antar Kolom
 
    ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/matriks%20korelasi.png?raw=true)
    
@@ -111,13 +119,16 @@ Dataset yang digunakan untuk memprediksi seseorang yang beresiko mengalami diabe
    - Glucose adalah fitur paling signifikan dalam menentukan kemungkinan diabetes.
    - BMI, Age, dan jumlah kehamilan (Pregnancies) juga berkontribusi tetapi tidak sekuat Glucose.
 
-**C. Handling Outliers**
+**C. Indentify Outliers**
 Untuk mengatasi outlier, salah satu metode yang umum digunakan adalah metode IQR (Interquartile Range) dengan visualisasi menggunakan boxplot. Berikut penjelasan mengenai metode IQR dan visualisasi boxplot:
 
 1. Apa itu IQR?
 Interquartile Range (IQR) adalah selisih antara kuartil ketiga (Q3) dan kuartil pertama (Q1) dari suatu data. Q1 adalah nilai yang membagi 25% data pertama (bagian bawah), sedangkan Q3 adalah nilai yang membagi 75% data (bagian atas). IQR digunakan untuk menggambarkan sebaran nilai yang berada di tengah 50% data.
 
-2. Langkah-langkah Deteksi Outlier dengan IQR:
+2. Visualisasi Boxplot
+Checking Outliers
+
+Langkah-langkah Deteksi Outlier dengan IQR:
 - Hitung Q1 dan Q3
    - Q1 adalah nilai pada persentil ke-25 dari data.
    - Q3 adalah nilai pada persentil ke-75 dari data.
@@ -128,22 +139,47 @@ Interquartile Range (IQR) adalah selisih antara kuartil ketiga (Q3) dan kuartil 
    - Batas Atas (Upper Bound) = Q3 + 1.5 × IQR
 - Identifikasi Outlier
    - Nilai yang lebih kecil dari batas bawah atau lebih besar dari batas atas dikategorikan sebagai outlier, yaitu data yang menyimpang jauh dari nilai mayoritas.
-
-3. Visualisasi Boxplot
-- Sebelum Outliers Dihapus
-
+ 
    ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/outliers%20sebelum%20dihapus.png?raw=true)
 
    Pada kolom `Pregnancies`, `Glucose`, `BloodPressure`, `SkinThickness`, `Insulin`, `BMI`, dan `DiabetesPedigreeFunction` terdeteksi cukup banyak outlier. Sementara itu, kolom `Age` juga menunjukkan indikasi adanya outlier. Namun, setelah ditinjau lebih lanjut, nilai-nilai pada kolom Age masih berada dalam rentang yang wajar sehingga tidak dihapus dari data.
-     
-- Setelah Outliers Dihapus
+
+
+## **Data Preparation**
+Pada tahap ini, dilakukan proses transformasi data agar sesuai dan siap digunakan dalam proses pemodelan, berikut adalah beberapa persiapan yang perlu dilakukan sebagai berikut:
+
+### Drop Kolom
+Pada tahap ini terdapat kolom yang tidak digunakan dalam modeling yaitu kolom `Id`,  Kolom ini akan dihapus menggunakan fungsi `drop()`.
+
+### Handling Outliers
+Karena saat dilakukan pengecekan outlier ditemukan cukup banyak outlier, maka outliers tersebut perlu dihapus agar dataset menjadi lebih bersih dan siap digunakan untuk proses modeling. Berikut adalah tahapan untuk menghapus outliers :
+
+1. Menentukan Kolom yang Akan Dicek
+- Pertama, kita tentukan kolom-kolom mana saja dalam data yang berisi angka (data numerik) dan akan diperiksa apakah mengandung outlier atau tidak.
+
+2. Menghitung Kuartil dan IQR Untuk setiap kolom:
+   - Hitung Q1 (kuartil pertama) → batas bawah 25% data terendah.
+   - Hitung Q3 (kuartil ketiga) → batas atas 25% data tertinggi.
+   - Lalu hitung IQR (Interquartile Range), yaitu selisih antara Q3 dan Q1. IQR menunjukkan rentang "normal" dari data tersebut.
+
+3. Menentukan Batas Outlier
+- Setelah IQR diketahui, kita tentukan batas bawah dan batas atas dari nilai yang dianggap wajar:
+   - Batas bawah = Q1 dikurangi 1.5 × IQR.
+   - Batas atas = Q3 ditambah 1.5 × IQR.
+   - Nilai yang berada di luar kedua batas ini dianggap sebagai outlier, yaitu data yang terlalu jauh berbeda dari data lainnya.
+
+4. Mengidentifikasi Outlier
+- Untuk setiap kolom, kita periksa apakah ada nilai yang berada di luar batas bawah atau batas atas tersebut. Jika ada, maka baris data tersebut dicatat sebagai data yang mengandung outlier.
+
+5. Menggabungkan Semua Outlier
+- Setelah seluruh kolom diperiksa, semua baris yang mengandung outlier dari salah satu kolom atau lebih dikumpulkan dalam satu daftar.
+
+6. Menghapus Baris Outlier
+- Semua baris data yang mengandung outlier kemudian dihapus dari dataset. Ini dilakukan agar data menjadi lebih bersih dan hasil analisis atau pemodelan tidak terganggu oleh nilai-nilai ekstrem.
 
    ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/outliers%20setelah%20dihapus.png?raw=true)
 
    Visualiasi diatas menampilkan hasil setelah outliers dihapus
-
-## **Data Preparation**
-Pada tahap ini, dilakukan proses transformasi data agar sesuai dan siap digunakan dalam proses pemodelan, salah satunya dengan membagi dataset (split dataset).
 
 ### Melakukan Split Dataset
 Karena fokus prediksi terletak pada variabel Outcome sebagai target untuk menentukan tingkat akurasi dalam mengklasifikasikan apakah seseorang mengalami menderita diabetes atau tidak, maka kolom tersebut dipisahkan dari dataset utama dan disimpan dalam variabel terpisah. Dataset kemudian dibagi menjadi dua bagian: data training yang digunakan untuk melatih model, dan data testing yang digunakan untuk menguji performa model terhadap data yang belum pernah dilihat sebelumnya. Pembagian ini dilakukan dengan rasio 75% untuk training dan 25% untuk testing, menggunakan fungsi train_test_split dari pustaka sklearn.
@@ -301,6 +337,8 @@ Terdapat 4 label pada matriks confusion seperti yang terlihat di gambar, yaitu T
    ![alt text](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/confusion%20matrix.png?raw=true)
 
 Berdasarkan hasil Confusion Matrix dari ketiga model yang diuji, model Decision Tree menunjukkan performa terbaik, dengan hanya 2 kesalahan prediksi pada kelas positif (1), dan tidak ada kesalahan pada kelas negatif (0). Sebaliknya, model Logistic Regression memberikan hasil terburuk, dengan 40 kesalahan prediksi pada kelas negatif (0) dan 88 kesalahan pada kelas positif (1). Hal ini menunjukkan bahwa Logistic Regression kurang efektif dalam mendeteksi kasus positif, yang penting dalam konteks deteksi diabetes.
+
+### Perbandingan Hasil Evaluasi Model
 
 ## **Kesimpulan**
 Berdasarkan serangkaian proses analisis data dan pembangunan model machine learning terhadap dataset diabetes dari Kaggle, diperoleh beberapa poin utama sebagai berikut:
