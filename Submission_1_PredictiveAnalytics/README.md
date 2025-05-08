@@ -194,7 +194,7 @@ Pada tahap modeling, dilakukan pemilihan algoritma yang akan digunakan dalam mem
 
 **1. Algoritma Logistic Regression**
 
-  Regresi logistik adalah teknik analisis data yang menggunakan matematika untuk menemukan hubungan antara dua faktor data. Kemudian menggunakan hubungan ini untuk memprediksi nilai dari salah satu faktor tersebut berdasarkan faktor yang lain. Prediksi biasanya memiliki jumlah hasil yang terbatas, seperti ya atau tidak [[1]](https://aws.amazon.com/id/what-is/logistic-regression/).
+  Regresi logistik adalah teknik analisis data yang menggunakan matematika untuk menemukan hubungan antara dua faktor data. Kemudian menggunakan hubungan ini untuk memprediksi nilai dari salah satu faktor tersebut berdasarkan faktor yang lain. Prediksi biasanya memiliki jumlah hasil yang terbatas, seperti ya atau tidak.
 
 Model ini bekerja dengan memodelkan hubungan antara satu atau lebih variabel independen dan variabel dependen biner (dua kelas) menggunakan fungsi logistik (sigmoid). Pada algoritma ini digunakan parameter `solver='lbfgs'` untuk optimasi, `max_iter=500` sebagai batas maksimum iterasi, dan `random_state=42` untuk memastikan hasil model tetap konsisten.
 ```Ruby
@@ -203,7 +203,7 @@ lr_model = LogisticRegression(solver='lbfgs', max_iter=500, random_state=42)
 
 **2. Algoritma Decision Tree**
 
-  Decision trees adalah algoritme pembelajaran yang diawasi dan bersifat non-parametrik, yang digunakan untuk tugas klasifikasi dan regresi. Memiliki struktur pohon hierarkis, yang terdiri dari simpul akar, cabang, simpul internal dan simpul daun [[2]](https://www.ibm.com/id-id/think/topics/decision-trees).
+  Decision trees adalah algoritme pembelajaran yang diawasi dan bersifat non-parametrik, yang digunakan untuk tugas klasifikasi dan regresi. Memiliki struktur pohon hierarkis, yang terdiri dari simpul akar, cabang, simpul internal dan simpul daun.
 
 Decision Tree membagi data berdasarkan fitur yang paling baik memisahkan kelas target menggunakan metrik seperti Gini Impurity. Pada implementasinya, model ini menggunakan parameter `max_depth=5` untuk menghindari overfitting,` criterion='gini'` sebagai metode pemilihan split, dan `random_state=42` untuk menjaga konsistensi hasil.
 ```Ruby
@@ -212,7 +212,7 @@ dt_model = DecisionTreeClassifier(max_depth=5, criterion='gini', random_state=42
 
 **3. Algoritma Random Forest**
 
-  Random Forest adalah algoritma dalam machine learning yang digunakan untuk pengklasifikasian dataset. Karena fungsinya bisa digunakan untuk banyak dimensi dengan berbagai skala dan performa yang tinggi. Klasifikasi ini dilakukan melalui penggabungan tree dalam decision tree dengan cara training dataset [[3]](https://algorit.ma/blog/cara-kerja-algoritma-random-forest-2022/).
+  Random Forest adalah algoritma dalam machine learning yang digunakan untuk pengklasifikasian dataset. Karena fungsinya bisa digunakan untuk banyak dimensi dengan berbagai skala dan performa yang tinggi. Klasifikasi ini dilakukan melalui penggabungan tree dalam decision tree dengan cara training dataset.
 
 Random Forest merupakan algoritma ensemble learning yang menggabungkan banyak Decision Tree untuk meningkatkan akurasi dan stabilitas prediksi. Model ini membangun beberapa pohon keputusan dan menggabungkan hasil prediksinya. Parameter yang digunakan adalah `n_estimators=50` (jumlah pohon), `max_depth=12` (kedalaman maksimum pohon), `random_state=42` untuk replikasi hasil, dan `n_jobs=-1` yang berarti proses training dilakukan secara paralel menggunakan seluruh core CPU.
 ```Ruby
@@ -271,7 +271,7 @@ Berdasarkan hasil Confusion Matrix dari ketiga model yang diuji, model Random Fo
 
 ### Perbandingan Hasil Evaluasi Model
 
-Dari hasil kedua skema evaluasi model (Classification Report dan Confusion Matrix) hasil menunjukkan bahwa Random Forest memberikan hasil performa terbaik. Dimana akurasi mencapai 91% dan kelasahan prediksi hanya 5 kesalahan pada kelas positif dan tidak ada kesalahan prediksi pada kelas negatif.
+Dari hasil kedua skema evaluasi model (Classification Report dan Confusion Matrix) hasil menunjukkan bahwa Random Forest memberikan hasil performa terbaik. Dimana akurasi mencapai 99.1% dan kesalahan prediksi hanya 5 kesalahan pada kelas positif dan tidak ada kesalahan prediksi pada kelas negatif.
 
 ## **Kesimpulan**
 Berdasarkan serangkaian proses analisis data dan pembangunan model machine learning terhadap dataset diabetes dari Kaggle, diperoleh beberapa poin utama sebagai berikut:
