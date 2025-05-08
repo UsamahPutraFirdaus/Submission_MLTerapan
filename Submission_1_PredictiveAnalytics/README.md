@@ -2,7 +2,7 @@
 
 ## **Domain Proyek**
 
-Diabetes merupakan salah satu penyakit kronis yang paling banyak diderita di seluruh dunia. Berdasarkan data dari World Health Organization (WHO), jumlah penderita diabetes terus meningkat setiap tahunnya, baik di negara maju maupun berkembang. Penyakit ini seringkali tidak menunjukkan gejala pada tahap awal, sehingga banyak penderita yang tidak menyadari bahwa mereka mengidap diabetes hingga komplikasi muncul. Kondisi ini menyebabkan keterlambatan dalam penanganan yang dapat memperburuk kesehatan pasien.
+Diabetes merupakan salah satu penyakit kronis yang paling banyak diderita di seluruh dunia. Berdasarkan data dari World Health Organization (WHO), jumlah penderita diabetes terus meningkat setiap tahunnya, baik di negara maju maupun berkembang. Penyakit ini seringkali tidak menunjukkan gejala pada tahap awal, sehingga banyak penderita yang tidak menyadari bahwa mereka mengidap diabetes hingga komplikasi muncul. Kondisi ini menyebabkan keterlambatan dalam penanganan yang dapat memperburuk kesehatan pasien [[1]](https://www.who.int/news-room/fact-sheets/detail/diabetes).
 
 Dalam era digital saat ini, kemajuan teknologi di bidang data science dan machine learning membuka peluang besar untuk mendukung deteksi dini penyakit, termasuk diabetes. Dengan memanfaatkan data kesehatan seperti kadar glukosa darah, tekanan darah, indeks massa tubuh (BMI), dan faktor risiko lainnya, kita dapat membangun sistem prediksi yang membantu tenaga medis maupun individu dalam mengidentifikasi risiko diabetes secara lebih cepat dan akurat.
 
@@ -289,4 +289,8 @@ Tiga model telah dibangun dan dibandingkan, yaitu:
 Pada dataset ini model Random Forest menghasilkan kesalahan prediksi terendah berdasarkan analisis confusion matrix, menjadikannya model dengan performa terbaik di antara ketiganya.
 
 4. Model Terbaik untuk Prediksi Diabetes
-Dengan hasil confusion matrix model Random Forest menunjukkan jumlah kesalahan paling sedikit, serta mendapatkan akurasi paling tinggi dibandingkan dengan model lainnya. Hal ini menunjukkan bahwa Model Random Forest merupakan model yang paling baik performanya dalam mendeteksi Penderita Diabetes 
+Dengan hasil confusion matrix model Random Forest menunjukkan jumlah kesalahan paling sedikit, serta mendapatkan akurasi paling tinggi dibandingkan dengan model lainnya. Hal ini menunjukkan bahwa Model Random Forest merupakan model yang paling baik performanya dalam mendeteksi Penderita Diabetes
+
+
+# Reference:
+[1] World Health Organization, "Diabetes", 2024. https://www.who.int/news-room/fact-sheets/detail/diabetes (accessed May. 8, 2025)
