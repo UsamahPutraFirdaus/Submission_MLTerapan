@@ -192,7 +192,7 @@ x_train , x_test , y_train , y_test = train_test_split(x,y,test_size=0.25,random
 ## Modeling
 Pada tahap modeling, dilakukan pemilihan algoritma yang akan digunakan dalam membangun model machine learning, serta proses pengembangan dan pelatihan model tersebut agar dapat dimanfaatkan dalam analisis prediksi. Tiga algoritma berikut akan diuji terlebih dahulu untuk mengevaluasi performa dan menentukan model dengan hasil terbaik, yaitu:
 
-1. Algoritma Logistic Regression
+**1. Algoritma Logistic Regression**
 
   Regresi logistik adalah teknik analisis data yang menggunakan matematika untuk menemukan hubungan antara dua faktor data. Kemudian menggunakan hubungan ini untuk memprediksi nilai dari salah satu faktor tersebut berdasarkan faktor yang lain. Prediksi biasanya memiliki jumlah hasil yang terbatas, seperti ya atau tidak [[1]](https://aws.amazon.com/id/what-is/logistic-regression/).
 
@@ -201,16 +201,18 @@ Model ini bekerja dengan memodelkan hubungan antara satu atau lebih variabel ind
 lr_model = LogisticRegression(solver='lbfgs', max_iter=500, random_state=42)
 ```
 
-2. Algoritma Decision Tree
-Decision trees adalah algoritme pembelajaran yang diawasi dan bersifat non-parametrik, yang digunakan untuk tugas klasifikasi dan regresi. Memiliki struktur pohon hierarkis, yang terdiri dari simpul akar, cabang, simpul internal dan simpul daun [2](https://www.ibm.com/id-id/think/topics/decision-trees).
+**2. Algoritma Decision Tree**
+
+  Decision trees adalah algoritme pembelajaran yang diawasi dan bersifat non-parametrik, yang digunakan untuk tugas klasifikasi dan regresi. Memiliki struktur pohon hierarkis, yang terdiri dari simpul akar, cabang, simpul internal dan simpul daun [2](https://www.ibm.com/id-id/think/topics/decision-trees).
 
 Decision Tree membagi data berdasarkan fitur yang paling baik memisahkan kelas target menggunakan metrik seperti Gini Impurity. Pada implementasinya, model ini menggunakan parameter max_depth=5 untuk menghindari overfitting, criterion='gini' sebagai metode pemilihan split, dan random_state=42 untuk menjaga konsistensi hasil.
 ```Ruby
 dt_model = DecisionTreeClassifier(max_depth=5, criterion='gini', random_state=42)
 ```
 
-3. Algoritma Random Forest
-Random Forest adalah algoritma dalam machine learning yang digunakan untuk pengklasifikasian dataset. Karena fungsinya bisa digunakan untuk banyak dimensi dengan berbagai skala dan performa yang tinggi. Klasifikasi ini dilakukan melalui penggabungan tree dalam decision tree dengan cara training dataset.
+**3. Algoritma Random Forest**
+
+  Random Forest adalah algoritma dalam machine learning yang digunakan untuk pengklasifikasian dataset. Karena fungsinya bisa digunakan untuk banyak dimensi dengan berbagai skala dan performa yang tinggi. Klasifikasi ini dilakukan melalui penggabungan tree dalam decision tree dengan cara training dataset.
 
 Random Forest merupakan algoritma ensemble learning yang menggabungkan banyak Decision Tree untuk meningkatkan akurasi dan stabilitas prediksi. Model ini membangun beberapa pohon keputusan dan menggabungkan hasil prediksinya. Parameter yang digunakan adalah n_estimators=50 (jumlah pohon), max_depth=12 (kedalaman maksimum pohon), random_state=42 untuk replikasi hasil, dan n_jobs=-1 yang berarti proses training dilakukan secara paralel menggunakan seluruh core CPU.
 ```Ruby
