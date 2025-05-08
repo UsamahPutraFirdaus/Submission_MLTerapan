@@ -51,7 +51,7 @@ Pada tahap ini, dilakukan pemeriksaan terhadap data yang tidak valid dalam datas
 **B. EDA - Univariete Analysis**
 1. Distribusi Usia
 
-   ![img alt](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/distribusi%20usia.png?raw=true)
+  ![img alt](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/distribusi%20usia.png?raw=true)
    
    **Interpretasi Visualisasi Distribusi Usia**
    
@@ -60,7 +60,7 @@ Pada tahap ini, dilakukan pemeriksaan terhadap data yang tidak valid dalam datas
 
 3. Distribusi Jumlah Orang perKelompok Usia
 
-      ![img alt](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/distribusi%20jumlah%20orang%20per%20kelompok.png?raw=true)
+  ![img alt](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/distribusi%20jumlah%20orang%20per%20kelompok.png?raw=true)
 
    >```Ruby
    ># Buat kategori umur
