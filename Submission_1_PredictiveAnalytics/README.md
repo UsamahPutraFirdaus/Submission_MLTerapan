@@ -20,7 +20,7 @@ Berdasarkan Problem Statement yang telah disebutkan, berikut adalah tujuan/goals
 - Membandingkan performa beberapa model *machine learning* untuk menemukan model dengan akurasi terbaik dan kesalahan prediksi paling minim.
 
 ### Solution Statements
-- Melakukan Exploratory Data Analysis (EDA) untuk memvisualisasikan  kelompok usia, dan penderita diabetes berdasarkan kelompok usia
+- Melakukan Exploratory Data Analysis (EDA) dengan matriks korelasi untuk melihat fitur-fitur yang berpengaruh
 - Membandingkan 3 performa model *Machine Learning* yaitu Logistic Regression, Decision Tree, dan Random Forest
 - Melakukan Evaluasi model menggunakan Confusion Matrix untuk melihat mana model yang paling sedikit melakukan kesalahan prediksi
 
