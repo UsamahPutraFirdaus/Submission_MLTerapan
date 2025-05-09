@@ -11,16 +11,16 @@ Proyek ini bertujuan untuk membangun model predictive analytics yang mampu mende
 ## Business Understanding
 ### Problem Statements
 Dari latar belakang diatas, maka rumusan masalah yang akan dibahas pada proyek ini sebagai berikut:
-- fitur apa saja yang berpengaruh dalam proses modeling predictive analytics terhadap penderita diabetes?
+- Bagaimana cara mendeteksi risiko diabetes sejak dini untuk mencegah keterlambatan penanganan yang dapat memperburuk kondisi kesehatan pasien?
 - Model machine learning apa yang memiliki akurasi tertinggi dan tingkat kesalahan prediksi paling rendah dalam mendeteksi penderita diabetes?
 
 ### Goals
 Berdasarkan Problem Statement yang telah disebutkan, berikut adalah tujuan/goals dari proyek ini sebagai berikut:
-- Menganalisis pentingnya setiap fitur terhadap penderita diabetes.
+- Mengembangkan sistem prediksi untuk mendeteksi risiko diabetes secara dini berdasarkan variabel-variabel dataset yang digunakan.
 - Membandingkan performa beberapa model *machine learning* untuk menemukan model dengan akurasi terbaik dan kesalahan prediksi paling minim.
 
 ### Solution Statements
-- Melakukan Exploratory Data Analysis (EDA) dengan matriks korelasi untuk melihat fitur-fitur yang berpengaruh
+- Membangun dan melatih model machine learning untuk memprediksi seseorang mengidap diabetes.
 - Membandingkan 3 performa model *Machine Learning* yaitu Logistic Regression, Decision Tree, dan Random Forest
 - Melakukan Evaluasi model menggunakan Confusion Matrix untuk melihat mana model yang paling sedikit melakukan kesalahan prediksi
 
@@ -120,26 +120,9 @@ Pada tahap ini, dilakukan pemeriksaan terhadap data yang tidak valid dalam datas
    - BMI, Age, dan jumlah kehamilan (Pregnancies) juga berkontribusi tetapi tidak sekuat Glucose.
 
 **C. Indentify Outliers**
-Untuk mengatasi outlier, salah satu metode yang umum digunakan adalah metode IQR (Interquartile Range) dengan visualisasi menggunakan boxplot. Berikut penjelasan mengenai metode IQR dan visualisasi boxplot:
 
-1. Apa itu IQR?
-Interquartile Range (IQR) adalah selisih antara kuartil ketiga (Q3) dan kuartil pertama (Q1) dari suatu data. Q1 adalah nilai yang membagi 25% data pertama (bagian bawah), sedangkan Q3 adalah nilai yang membagi 75% data (bagian atas). IQR digunakan untuk menggambarkan sebaran nilai yang berada di tengah 50% data.
+  Untuk mengatasi outlier, salah satu metode yang umum digunakan adalah metode IQR (Interquartile Range) dengan visualisasi menggunakan boxplot.
 
-2. Visualisasi Boxplot
-Checking Outliers
-
-Langkah-langkah Deteksi Outlier dengan IQR:
-- Hitung Q1 dan Q3
-   - Q1 adalah nilai pada persentil ke-25 dari data.
-   - Q3 adalah nilai pada persentil ke-75 dari data.
-- Hitung IQR
-   - IQR = Q3 − Q1
-- Tentukan Batas Deteksi Outlier
-   - Batas Bawah (Lower Bound) = Q1 − 1.5 × IQR
-   - Batas Atas (Upper Bound) = Q3 + 1.5 × IQR
-- Identifikasi Outlier
-   - Nilai yang lebih kecil dari batas bawah atau lebih besar dari batas atas dikategorikan sebagai outlier, yaitu data yang menyimpang jauh dari nilai mayoritas.
- 
    ![img alt](https://github.com/UsamahPutraFirdaus/Submission_MLTerapan/blob/main/Submission_1_PredictiveAnalytics/img/indentify%20outliers.png?raw=true)
 
    Pada kolom `Pregnancies`, `Glucose`, `BloodPressure`, `SkinThickness`, `Insulin`, `BMI`, dan `DiabetesPedigreeFunction` terdeteksi cukup banyak outlier. Sementara itu, kolom `Age` juga menunjukkan indikasi adanya outlier. Namun, setelah ditinjau lebih lanjut, nilai-nilai pada kolom Age masih berada dalam rentang yang wajar sehingga tidak dihapus dari data.
