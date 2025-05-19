@@ -22,7 +22,10 @@ Untuk menjawab permasalahan dalam pengembangan sistem rekomendasi film, solusi y
 - Menampilkan hasil rekomendasi tiap metode yang digunakan
   
 # Data Understanding
-Dataset yang digunakan menggunakan diambil dari kaggle yang dapat diakses [disini](https://www.kaggle.com/code/nicoletacilibiu/movies-recommendation-system)
+Dataset yang digunakan menggunakan diambil dari kaggle yang dapat diakses [disini](https://www.kaggle.com/datasets/nicoletacilibiu/movies-and-ratings-for-recommendation-system). Dataset ini memiliki 2 file terpisah yaitu `movies.csv` dan `ratings.csv`. Dataset ini dipublikasikan oleh [Nicoleta Cilibiu](https://www.kaggle.com/nicoletacilibiu) pada tahun 2023. Dataset ini berisi informasi terkait Film seperti tahun release, user rating, dan lain-lain.
+
+
+dimana `movies.csv` berisi 3 variable antara lain `movieId`, `title`, dan `genres`. Sedangkan `ratings.csv` berisi 4 variable antara lain `userId`, `movieId`, `rating`, dan `timestamp`
 # Data Preparation
 # Modeling
 # Evaluation
