@@ -25,7 +25,26 @@ Untuk menjawab permasalahan dalam pengembangan sistem rekomendasi film, solusi y
 Dataset yang digunakan menggunakan diambil dari kaggle yang dapat diakses [disini](https://www.kaggle.com/datasets/nicoletacilibiu/movies-and-ratings-for-recommendation-system). Dataset ini memiliki 2 file terpisah yaitu `movies.csv` dan `ratings.csv`. Dataset ini dipublikasikan oleh [Nicoleta Cilibiu](https://www.kaggle.com/nicoletacilibiu) pada tahun 2023. Dataset ini berisi informasi terkait Film seperti tahun release, user rating, dan lain-lain.
 
 
-dimana `movies.csv` berisi 3 variable antara lain `movieId`, `title`, dan `genres`. Sedangkan `ratings.csv` berisi 4 variable antara lain `userId`, `movieId`, `rating`, dan `timestamp`
+| Jenis    | Keterangan                                                |
+|----------|-----------------------------------------------------------|
+| Title    | Movies & Ratings for Recommendation System                                        |
+| Source   |[Kaggle](https://www.kaggle.com/datasets/nicoletacilibiu/movies-and-ratings-for-recommendation-system)                                                  |
+| Publisher | [Nicoleta Cilibiu](https://www.kaggle.com/dbdmobile)                                                   |
+| License  | CC0: Public Domain      |
+| Visibility | Publik                                                  |
+| Usability | 9.41                                                     |
+
+## Variable Dataset
+1. Pada file `movies.csv` terdapat 9737 rows dan 3 columns
+   - `movieId` : memuat nomor ID film
+   - `title` : memuat judul film
+   - `genres` : memuat genre film
+2. Pada file `ratings.csv` terdapat 100836 rows dan 4 columns
+   - `userId` : memuat nomor ID users
+   - `movieId` : memuat nomor ID film
+   - `rating` : memuat rating tiap user dengan peningkatan setengah bintang dalam rentang 0.5 - 5 bintang
+   - `timestamp` : memuat waktu user ketika memberi rating
+
 # Data Preparation
 # Modeling
 # Evaluation
