@@ -17,8 +17,8 @@ Berdasarkan rumusan masalah yang telah dipaparkan di atas, maka proyek penelitia
 
 ## Solustion Statement
 Untuk menjawab permasalahan dalam pengembangan sistem rekomendasi film, solusi yang diusulkan adalah membangun dua model rekomendasi menggunakan pendekatan berbeda, yaitu Content-Based Filtering dan Collaborative Filtering:
-- **Content-Based Filtering**: Sistem akan menganalisis karakteristik film seperti genre, sutradara, aktor, dan sinopsis. Berdasarkan preferensi pengguna sebelumnya, sistem akan menghitung kemiripan antara film yang telah disukai dengan film lainnya menggunakan teknik seperti TF-IDF dan cosine similarity, sehingga dapat memberikan rekomendasi yang relevan secara personal tanpa bergantung pada data pengguna lain.
-- **Collaborative Filtering**: Sistem akan menggunakan data interaksi pengguna, seperti rating atau riwayat tontonan, untuk mengidentifikasi pola kesamaan antar pengguna atau antar film. Teknik yang digunakan dalam sistem ini akan memanfaatkan cosine similarity dan item based filtering untuk memprediksi preferensi pengguna terhadap film yang belum ditonton.
+- **Content-Based Filtering**: Sistem akan menganalisis karakteristik film berdasarkan genre. Berdasarkan preferensi pengguna sistem akan menghitung kemiripan antara film  dengan film lainnya menggunakan teknik seperti TF-IDF dan cosine similarity, sehingga dapat memberikan rekomendasi yang relevan secara personal tanpa bergantung pada data pengguna lain.
+- **Collaborative Filtering**: Sistem akan menggunakan data interaksi pengguna seperti rating tiap film, untuk mengidentifikasi pola kesamaan antar pengguna atau antar film. Teknik yang digunakan dalam sistem ini akan memanfaatkan cosine similarity dan item based filtering untuk memprediksi preferensi pengguna terhadap film yang belum ditonton.
   
 # Data Understanding
 # Data Preparation
