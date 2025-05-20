@@ -45,6 +45,46 @@ Dataset yang digunakan menggunakan diambil dari kaggle yang dapat diakses [disin
    - `rating` : memuat rating tiap user dengan peningkatan setengah bintang dalam rentang 0.5 - 5 bintang
    - `timestamp` : memuat waktu user ketika memberi rating
 
+## Exploratory Data Analysis
+Proses EDA dilakukan untuk menganalisis dataset untuk menemukan insight.
+
+### Univariate Analysis
+
+  ![img alt](?raw=true)
+
+Dari hasil analisis, terdapat total 100.836 data rating yang diberikan oleh 610 user terhadap 9.724 film. Setiap user memberikan rata-rata sekitar 165 rating, menunjukkan bahwa user dalam dataset ini tergolong aktif. Namun, setiap film hanya menerima rata-rata sekitar 10 rating, yang mengindikasikan kemungkinan adanya ketimpangan distribusi rating antar film, beberapa film mungkin sangat populer sementara banyak lainnya hanya menerima sedikit rating. Hal ini dapat memengaruhi performa sistem rekomendasi, terutama dalam menghadapi masalah cold start untuk film dengan sedikit rating.
+  
 # Data Preparation
+## Data Cleaning
+Pada proses data cleaning, saya melakukan data cleaning pada data movies.csv dan ratings.csv. setelah kedua data tersebut dirasa sudah terlihat cukup baik, saya melakukan merging dataframe pada kedua data tersebut dan menjadikannya sebagai dataframe yang utuh untuk mengembangkan sistem rekomendasi. Berikut langkah-langkahnya:
+1. Data Cleaning `movies.csv`
+
+   Pada data `movies.csv` pada variable atau feature `title` terdapat judul film dan tahun release. Hal ini diperlukan
+   penanganan khusus untuk memisahkan antara judul film dengan tahun rilis agar tidak terjadi permasalahan yang tidak
+   diinginkan pada proses training model. dimana, tahun rilis dari setiap film akan dipisahkan ke dalam kolom tersendiri.
+   
+2. Data Cleaning `ratings.csv`
+
+   Pada data `ratings.csv` terdapat feature yang tidak digunakan dalam tahap modeling sistem rekomendasi menggunakan metode
+   Content Based Filtering maupun Collaborative Filtering, feature tersebut adalah `timestamp` yang mana `timestamp` hanya
+   menampilkan kapan user memberikan rating, sehingga saya mendrop/menghapus feature tersebut.
+   
+3. Data Merge `movies_df` dengan `ratings_df`
+
+   Penggabungan dilakukan dengan melakukan merge pada kedua dataframe antara movies dengan ratings menjadi satu dataframe
+   yang utuh dan mengassignnya kedalam variabel `films`.
+
+4. Data Cleaning `films`
+
+- Handling Missing Value
+  Setelah data digabung, terdapat beberapa feature yang memiliki null values atai nilai NaN, karena hanya 18 rows yang
+  terdeteksi nilai NaN sehingga saya mengahpusnya. Saat saya mengecek pada kolom `genres` terdapat beberapa film yang
+  tidak memiliki genre `(no genres listed)`, karena nanti akan digunakan untuk modeling metode `Content Based Filtering`
+  film-film yang tidak memiliki genre akan dihapus agar model bisa memberikan rekomendasi yang lebih relevan.
+- Memisahkan variable Dataframe yang berbeda
+  Karena tujuan awal adalah membuat modeling dengan 2 metode yang berbeda, sehingga dataframe dibedakan agar memudahkan
+  pada proses modeling, karena tiap metode memiliki treatment yang berbeda. Dataframe 1 untuk metode `Content Based
+  Filtering` menggunakan nama `content_df` sedangkan untuk `Collaborative Filtering` dengan nama `collab_df`
+- 
 # Modeling
 # Evaluation
