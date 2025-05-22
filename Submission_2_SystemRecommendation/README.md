@@ -19,7 +19,7 @@ Berdasarkan rumusan masalah yang telah dipaparkan di atas, maka proyek penelitia
 Untuk menjawab permasalahan dalam pengembangan sistem rekomendasi film, solusi yang diusulkan adalah membangun dua model rekomendasi menggunakan pendekatan berbeda, yaitu Content-Based Filtering dan Collaborative Filtering:
 - **Content-Based Filtering**: Sistem akan menganalisis karakteristik film berdasarkan genre. Berdasarkan preferensi pengguna sistem akan menghitung kemiripan antara film  dengan film lainnya menggunakan teknik seperti TF-IDF dan cosine similarity, sehingga dapat memberikan rekomendasi yang relevan secara personal tanpa bergantung pada data pengguna lain.
 - **Collaborative Filtering**: Sistem akan menggunakan data interaksi pengguna seperti rating tiap film, untuk mengidentifikasi pola kesamaan antar pengguna atau antar film. Teknik yang digunakan dalam sistem ini akan memanfaatkan cosine similarity dan item based filtering untuk memprediksi preferensi pengguna terhadap film yang belum ditonton.
-- Menampilkan hasil rekomendasi tiap metode yang digunakan
+- Melakukan evaluasi model untuk melihat performa terbaik diantara 2 metode yang digunakan 
   
 # Data Understanding
 Dataset yang digunakan menggunakan diambil dari kaggle yang dapat diakses [disini](https://www.kaggle.com/datasets/nicoletacilibiu/movies-and-ratings-for-recommendation-system). Dataset ini memiliki 2 file terpisah yaitu `movies.csv` dan `ratings.csv`. Dataset ini dipublikasikan oleh [Nicoleta Cilibiu](https://www.kaggle.com/nicoletacilibiu) pada tahun 2023. Dataset ini berisi informasi terkait Film seperti tahun release, user rating, dan lain-lain.
