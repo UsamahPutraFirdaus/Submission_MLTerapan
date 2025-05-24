@@ -35,7 +35,7 @@ Dataset yang digunakan menggunakan diambil dari kaggle yang dapat diakses [disin
 | Usability | 9.41                                                     |
 
 ## Variable Dataset
-1. Pada file `movies.csv` terdapat 9737 rows dan 3 columns
+1. Pada file `movies.csv` terdapat 9742 rows dan 3 columns
    - `movieId` : memuat nomor ID film
    - `title` : memuat judul film
    - `genres` : memuat genre film
