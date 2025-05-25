@@ -117,6 +117,7 @@ D. Data Cleaning `films`
       membutuhkan feature `genres` jadi yang perlu dihapus hanya feature `title` dengan `.str.strip()`.
       
     - Membuat Pivot Table
+    - 
       Untuk membangun model `Collaborative Filtering`, saya hanya menggunakan tiga fitur utama, yaitu `userId`, `title`, dan
       `rating`. Oleh karena itu, saya membuat sebuah pivot table dari ketiga fitur tersebut dengan kode berikut:
       
@@ -193,6 +194,7 @@ B. Collaborative Filtering
 Collaborative filtering merupakan metode sistem rekomendasi yang memberikan saran berdasarkan aktivitas dan preferensi pengguna lain yang memiliki kemiripan perilaku atau selera dengan pengguna target. Konsep dasarnya adalah: jika dua pengguna memiliki preferensi yang mirip di masa lalu, maka kemungkinan besar mereka juga akan menyukai hal yang sama di masa depan. Pada proyek ini collaborative filtering yang digunakan menggunakan `item-based filtering` Ada beberapa tahapan yang saya lakukan, diantaranya sebagai berikut
 
 1. Cosine Similarity
+   
    Pada tahap ini, dilakukan proses standarisasi terhadap data rating menggunakan fungsi `standardize()`, yaitu dengan
    mengurangi nilai rata-rata pada setiap baris dan membaginya dengan selisih antara nilai maksimum dan minimum, agar skala
    data menjadi seragam. Data yang telah distandarisasi (data_std) kemudian digunakan untuk menghitung item-item similarity
